@@ -295,92 +295,155 @@
     </section>
 
     <!-- Certifications Section -->
-    <section class="certifications" id="certifications" style="padding: 100px 20px; max-width: 1200px; margin: 0 auto;">
-        <h2 class="section-title">Certifications</h2>
+    <section class="certifications" id="certifications">
+        <div class="cert-header-block">
+            <h2 class="section-title">Certifications</h2>
+            
+        </div>
 
         <div class="cert-grid">
-            <div class="cert-card">
-                <h4 class="cert-header" onclick="toggleCert(this)">Cisco Packet Tracer Certificate <span class="cert-toggle-icon">+</span></h4>
-                <div class="cert-body">
-                    <p><strong>Provider:</strong> Cisco Networking Academy<br><strong>Course:</strong> Getting Started with Cisco Packet Tracer</p>
-                    <p class="cert-details">This certificate was awarded by <b>Cisco Networking Academy</b> for successfully completing the course <b>“Getting Started with Cisco Packet Tracer.”</b> The certification demonstrates foundational knowledge in network simulation, packet tracing, and basic networking concepts using Cisco tools. This achievement reflects practical understanding of networking environments and troubleshooting techniques. 🌐📡</p>
-                    <a href="javascript:void(0)" class="cert-link view-cert-link" data-cert-id="cisco-packet-tracer">View Certificate</a>
+            <article class="cert-card">
+                <button type="button" class="cert-toggle" data-target="cert-cisco">Cisco Packet Tracer Certificate<span class="cert-chevron">+</span></button>
+                <div class="cert-panel" id="cert-cisco">
+                    <div class="cert-panel-inner">
+                        <span class="cert-panel-provider">Cisco Networking Academy</span>
+                        <img src="cisco-packet-tracer.png" alt="Cisco Packet Tracer Certificate" class="cert-panel-image">
+                        <p class="cert-panel-desc">This certificate was awarded by Cisco Networking Academy for successfully completing the course “Getting Started with Cisco Packet Tracer.” The certification demonstrates foundational knowledge in networking, packet tracing, and network simulation using Cisco tools. 🌐📡</p>
+                    </div>
                 </div>
-            </div>
-            <div class="cert-card">
-                <h4 class="cert-header" onclick="toggleCert(this)">Advanced Diploma in Computer Programming <span class="cert-toggle-icon">+</span></h4>
-                <div class="cert-body">
-                    <p><strong>Provider:</strong> Tamilnadu Rural Computer Education Enhancement Scheme (TRCES)<br><strong>Institution:</strong> Cadd Cae Computers, Bodinayakkanur</p>
-                    <p class="cert-details">This certificate was awarded by <b>Tamilnadu Rural Computer Education Enhancement Scheme (TRCES)</b> for successfully completing the <b>Advanced Diploma in Computer Programming</b> course conducted at <b>Cadd Cae Computers, Bodinayakkanur.</b> The program covered programming fundamentals, software development concepts, database management, and practical computer applications. This certification represents dedication toward technical and professional skill development. 💻🎓</p>
-                    <a href="javascript:void(0)" class="cert-link view-cert-link" data-cert-id="advanced-diploma">View Certificate</a>
+            </article>
+
+            <article class="cert-card">
+                <button type="button" class="cert-toggle" data-target="cert-advanced">Advanced Diploma in Computer Programming<span class="cert-chevron">+</span></button>
+                <div class="cert-panel" id="cert-advanced">
+                    <div class="cert-panel-inner">
+                        <span class="cert-panel-provider">Tamilnadu Rural Computer Education Enhancement Scheme (TRCES)</span>
+                        <img src="advanced-diploma.png" alt="Advanced Diploma in Computer Programming" class="cert-panel-image">
+                        <p class="cert-panel-desc">This certificate was awarded for successfully completing the Advanced Diploma in Computer Programming conducted at CADD CAE Computers. The program covered programming fundamentals, software development, databases, and practical applications. 💻🎓</p>
+                    </div>
                 </div>
-            </div>
-            <div class="cert-card">
-                <h4 class="cert-header" onclick="toggleCert(this)">IBM SQL Certificate <span class="cert-toggle-icon">+</span></h4>
-                <div class="cert-body">
-                    <p><strong>Provider:</strong> IBM via Coursera<br><strong>Course:</strong> SQL: A Practical Introduction for Querying Databases</p>
-                    <p class="cert-details">This certificate was awarded by <b>IBM</b> through <b>Coursera</b> for successfully completing the course <b>“SQL: A Practical Introduction for Querying Databases.”</b> The course provided hands-on experience in database querying, SQL commands, data filtering, joins, and relational database concepts. This achievement highlights strong foundational knowledge in database management and data handling. 🗄️📊</p>
-                    <a href="javascript:void(0)" class="cert-link view-cert-link" data-cert-id="ibm-sql">View Certificate</a>
+            </article>
+
+            <article class="cert-card">
+                <button type="button" class="cert-toggle" data-target="cert-ibm-sql">IBM SQL Certificate<span class="cert-chevron">+</span></button>
+                <div class="cert-panel" id="cert-ibm-sql">
+                    <div class="cert-panel-inner">
+                        <span class="cert-panel-provider">IBM via Coursera</span>
+                        <img src="ibm-sql.png" alt="IBM SQL Certificate" class="cert-panel-image">
+                        <p class="cert-panel-desc">Awarded by IBM through Coursera for completing “SQL: A Practical Introduction for Querying Databases.” Covers SQL queries, joins, filtering, and database management. 🗄️📊</p>
+                    </div>
                 </div>
-            </div>
-            <div class="cert-card">
-                <h4 class="cert-header" onclick="toggleCert(this)">Oracle Java Foundations Certificate <span class="cert-toggle-icon">+</span></h4>
-                <div class="cert-body">
-                    <p><strong>Provider:</strong> Oracle via Coursera<br><strong>Course:</strong> Oracle Java Foundations</p>
-                    <p class="cert-details">This certificate was awarded by <b>Oracle</b> through <b>Coursera</b> for successfully completing the course <b>“Oracle Java Foundations.”</b> The course focused on Java programming basics, object-oriented concepts, problem-solving techniques, and application development. This certification demonstrates a solid understanding of core Java programming principles. ☕💡</p>
-                    <a href="javascript:void(0)" class="cert-link view-cert-link" data-cert-id="oracle-java-foundations">View Certificate</a>
+            </article>
+
+            <article class="cert-card">
+                <button type="button" class="cert-toggle" data-target="cert-oracle">Oracle Java Foundations<span class="cert-chevron">+</span></button>
+                <div class="cert-panel" id="cert-oracle">
+                    <div class="cert-panel-inner">
+                        <span class="cert-panel-provider">Oracle via Coursera</span>
+                        <img src="oracle-java.png" alt="Oracle Java Foundations" class="cert-panel-image">
+                        <p class="cert-panel-desc">Awarded by Oracle through Coursera for completing “Oracle Java Foundations.” Demonstrates Java programming and object-oriented concepts. ☕💡</p>
+                    </div>
                 </div>
-            </div>
-            <div class="cert-card">
-                <h4 class="cert-header" onclick="toggleCert(this)">JDBC Introduction Certificate <span class="cert-toggle-icon">+</span></h4>
-                <div class="cert-body">
-                    <p><strong>Provider:</strong> LearnQuest via Coursera<br><strong>Course:</strong> Java Database Connectivity (JDBC) Introduction</p>
-                    <p class="cert-details">This certificate was awarded by <b>LearnQuest</b> through <b>Coursera</b> for successfully completing the course <b>“Java Database Connectivity (JDBC) Introduction.”</b> The course covered Java database integration, JDBC architecture, SQL execution through Java, and database-driven application development. This achievement reflects practical skills in connecting applications with databases. 🔗🗃️</p>
-                    <a href="javascript:void(0)" class="cert-link view-cert-link" data-cert-id="jdbc-introduction">View Certificate</a>
+            </article>
+
+            <article class="cert-card">
+                <button type="button" class="cert-toggle" data-target="cert-jdbc">JDBC Introduction Certificate<span class="cert-chevron">+</span></button>
+                <div class="cert-panel" id="cert-jdbc">
+                    <div class="cert-panel-inner">
+                        <span class="cert-panel-provider">LearnQuest via Coursera</span>
+                        <img src="jdbc.png" alt="JDBC Introduction Certificate" class="cert-panel-image">
+                        <p class="cert-panel-desc">Awarded for completing “Java Database Connectivity (JDBC) Introduction.” Covers Java database integration and SQL connectivity. 🔗🗃️</p>
+                    </div>
                 </div>
-            </div>
-            <div class="cert-card">
-                <h4 class="cert-header" onclick="toggleCert(this)">Core Java Multithreading Certificate <span class="cert-toggle-icon">+</span></h4>
-                <div class="cert-body">
-                    <p><strong>Provider:</strong> LearnKartS via Coursera<br><strong>Course:</strong> Core Java - Multithreading and Classes</p>
-                    <p class="cert-details">This certificate was awarded by <b>LearnKartS</b> through <b>Coursera</b> for successfully completing the course <b>“Core Java - Multithreading and Classes.”</b> The course focused on Java multithreading concepts, class structures, synchronization, and concurrent programming techniques. This certification demonstrates advanced understanding of efficient Java application development. ⚙️☕</p>
-                    <a href="javascript:void(0)" class="cert-link view-cert-link" data-cert-id="core-java-multithreading">View Certificate</a>
+            </article>
+
+            <article class="cert-card">
+                <button type="button" class="cert-toggle" data-target="cert-core-java">Core Java Multithreading Certificate<span class="cert-chevron">+</span></button>
+                <div class="cert-panel" id="cert-core-java">
+                    <div class="cert-panel-inner">
+                        <span class="cert-panel-provider">LearnKartS via Coursera</span>
+                        <img src="core-java.png" alt="Core Java Multithreading Certificate" class="cert-panel-image">
+                        <p class="cert-panel-desc">Awarded for completing “Core Java - Multithreading and Classes.” Focused on Java threading and synchronization concepts. ⚙️☕</p>
+                    </div>
                 </div>
-            </div>
-            <div class="cert-card">
-                <h4 class="cert-header" onclick="toggleCert(this)">IBM Networking and Storage Certificate <span class="cert-toggle-icon">+</span></h4>
-                <div class="cert-body">
-                    <p><strong>Provider:</strong> IBM via Coursera<br><strong>Course:</strong> Introduction to Networking and Storage</p>
-                    <p class="cert-details">This certificate was awarded by <b>IBM</b> through <b>Coursera</b> for successfully completing the course <b>“Introduction to Networking and Storage.”</b> The course introduced networking fundamentals, storage technologies, data communication concepts, and system infrastructure management. This achievement highlights foundational IT and networking knowledge. 🌐💾</p>
-                    <a href="javascript:void(0)" class="cert-link view-cert-link" data-cert-id="ibm-networking-storage">View Certificate</a>
+            </article>
+
+            <article class="cert-card">
+                <button type="button" class="cert-toggle" data-target="cert-networking">IBM Networking and Storage Certificate<span class="cert-chevron">+</span></button>
+                <div class="cert-panel" id="cert-networking">
+                    <div class="cert-panel-inner">
+                        <span class="cert-panel-provider">IBM via Coursera</span>
+                        <img src="networking-storage.png" alt="IBM Networking and Storage Certificate" class="cert-panel-image">
+                        <p class="cert-panel-desc">Awarded for completing “Introduction to Networking and Storage.” Covers networking concepts and storage technologies. 🌐💾</p>
+                    </div>
                 </div>
-            </div>
-            <div class="cert-card">
-                <h4 class="cert-header" onclick="toggleCert(this)">KGiSL DBMS and Security Certificate <span class="cert-toggle-icon">+</span></h4>
-                <div class="cert-body">
-                    <p><strong>Provider:</strong> KGiSL Educational Institutions via Coursera<br><strong>Course:</strong> Database Management Systems and Security</p>
-                    <p class="cert-details">This certificate was awarded by <b>KGiSL Educational Institutions</b> through <b>Coursera</b> for successfully completing the course <b>“Database Management Systems and Security.”</b> The course covered database concepts, data security, access control, and secure information management practices. This certification demonstrates awareness of secure database administration and cybersecurity fundamentals. 🔒🗄️</p>
-                    <a href="javascript:void(0)" class="cert-link view-cert-link" data-cert-id="kgisl-dbms-security">View Certificate</a>
+            </article>
+
+            <article class="cert-card">
+                <button type="button" class="cert-toggle" data-target="cert-dbms">KGiSL DBMS and Security Certificate<span class="cert-chevron">+</span></button>
+                <div class="cert-panel" id="cert-dbms">
+                    <div class="cert-panel-inner">
+                        <span class="cert-panel-provider">KGiSL Educational Institutions via Coursera</span>
+                        <img src="dbms.png" alt="KGiSL DBMS and Security Certificate" class="cert-panel-image">
+                        <p class="cert-panel-desc">Awarded for completing “Database Management Systems and Security.” Covers database security and secure information management. 🔒🗄️</p>
+                    </div>
                 </div>
-            </div>
-            <div class="cert-card">
-                <h4 class="cert-header" onclick="toggleCert(this)">Meta Advanced MySQL Certificate <span class="cert-toggle-icon">+</span></h4>
-                <div class="cert-body">
-                    <p><strong>Provider:</strong> Meta via Coursera<br><strong>Course:</strong> Advanced MySQL Topics</p>
-                    <p class="cert-details">This certificate was awarded by <b>Meta</b> through <b>Coursera</b> for successfully completing the course <b>“Advanced MySQL Topics.”</b> The course focused on advanced database operations, indexing, optimization, stored procedures, and efficient data management techniques using MySQL. This achievement reflects strong practical database management skills. 📊🐬</p>
-                    <a href="javascript:void(0)" class="cert-link view-cert-link" data-cert-id="meta-advanced-mysql">View Certificate</a>
+            </article>
+
+            <article class="cert-card">
+                <button type="button" class="cert-toggle" data-target="cert-meta-mysql">Meta Advanced MySQL Certificate<span class="cert-chevron">+</span></button>
+                <div class="cert-panel" id="cert-meta-mysql">
+                    <div class="cert-panel-inner">
+                        <span class="cert-panel-provider">Meta via Coursera</span>
+                        <img src="meta-mysql.png" alt="Meta Advanced MySQL Certificate" class="cert-panel-image">
+                        <p class="cert-panel-desc">Awarded for completing “Advanced MySQL Topics.” Covers indexing, optimization, and advanced database operations. 📊🐬</p>
+                    </div>
                 </div>
-            </div>
-            <div class="cert-card">
-                <h4 class="cert-header" onclick="toggleCert(this)">Microsoft Operating Systems & Security Certificate <span class="cert-toggle-icon">+</span></h4>
-                <div class="cert-body">
-                    <p><strong>Provider:</strong> Microsoft via Coursera<br><strong>Course:</strong> Introduction to Computers and Operating Systems and Security</p>
-                    <p class="cert-details">This certificate was awarded by <b>Microsoft</b> through <b>Coursera</b> for successfully completing the course <b>“Introduction to Computers and Operating Systems and Security.”</b> The course introduced computer fundamentals, operating system concepts, system security, and safe computing practices. This certification represents foundational knowledge in computer systems and cybersecurity. 🖥️🔐</p>
-                    <a href="javascript:void(0)" class="cert-link view-cert-link" data-cert-id="microsoft-operating-systems-security">View Certificate</a>
+            </article>
+
+            <article class="cert-card">
+                <button type="button" class="cert-toggle" data-target="cert-microsoft">Microsoft Operating Systems and Security Certificate<span class="cert-chevron">+</span></button>
+                <div class="cert-panel" id="cert-microsoft">
+                    <div class="cert-panel-inner">
+                        <span class="cert-panel-provider">Microsoft via Coursera</span>
+                        <img src="microsoft-os.png" alt="Microsoft Operating Systems and Security Certificate" class="cert-panel-image">
+                        <p class="cert-panel-desc">Awarded for completing “Introduction to Computers and Operating Systems and Security.” Covers OS basics and cybersecurity fundamentals. 🖥️🔐</p>
+                    </div>
                 </div>
-            </div>
+            </article>
+
+            <article class="cert-card">
+                <button type="button" class="cert-toggle" data-target="cert-presentation">National Level Student Seminar Presentation<span class="cert-chevron">+</span></button>
+                <div class="cert-panel" id="cert-presentation">
+                    <div class="cert-panel-inner">
+                        <span class="cert-panel-provider">KGiSL Institute Of Technology</span>
+                        <img src="presentation2.jpeg" alt="National Level Student Seminar Presentation" class="cert-panel-image">
+                        <p class="cert-panel-desc">Presented a paper in a One Day National Level Student Seminar on Youth Augmentation in Language and Socio Culture Environment conducted on 11th April 2025.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cert-card">
+                <button type="button" class="cert-toggle" data-target="cert-pyexpo">PYEXPO’25 Certificate of Appreciation<span class="cert-chevron">+</span></button>
+                <div class="cert-panel" id="cert-pyexpo">
+                    <div class="cert-panel-inner">
+                        <span class="cert-panel-provider">KGiSL Institute Of Technology</span>
+                        <img src="pyexpo2.jpeg" alt="PYEXPO'25 Certificate of Appreciation" class="cert-panel-image">
+                        <p class="cert-panel-desc">Received appreciation for remarkable contribution, innovation, and commitment during PYEXPO’25 – The Grand Expo 2025.</p>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
+
+    <!-- Certificate Modal -->
+    <div class="cert-modal" id="certModal">
+        <div class="cert-modal-overlay"></div>
+        <div class="cert-modal-content">
+            <button class="cert-modal-close" aria-label="Close certificate">✕</button>
+            <img class="cert-modal-image" src="" alt="Certificate">
+        </div>
+    </div>
 
     <!-- Projects Section -->
     <section class="projects" id="projects">
@@ -575,15 +638,59 @@
 
     <script src="templatemo-electric-scripts.js"></script>
 
-    <!-- Certificate Modal -->
-    <div id="certModal" class="cert-modal">
-        <span class="close-modal" onclick="closeCertModal()">&times;</span>
-        <img class="cert-modal-content" id="certImage" alt="Certificate image">
-        <div id="certModalText" class="cert-modal-text">
-            <h3 id="certModalTitle"></h3>
-            <p id="certModalDescription"></p>
-        </div>
-    </div>
+    <script>
+        const certToggles = document.querySelectorAll('.cert-toggle');
+        const certModal = document.getElementById('certModal');
+        const certModalImage = document.querySelector('.cert-modal-image');
+        const certModalClose = document.querySelector('.cert-modal-close');
+        const certModalOverlay = document.querySelector('.cert-modal-overlay');
+
+        // Get all certificate images
+        const certificateImages = {
+            'cert-cisco': 'cisco-packet-tracer.png',
+            'cert-advanced': 'advanced-diploma.png',
+            'cert-ibm-sql': 'ibm-sql.png',
+            'cert-oracle': 'oracle-java.png',
+            'cert-jdbc': 'jdbc.png',
+            'cert-core-java': 'core-java.png',
+            'cert-networking': 'networking-storage.png',
+            'cert-dbms': 'dbms.png',
+            'cert-meta-mysql': 'meta-mysql.png',
+            'cert-microsoft': 'microsoft-os.png',
+            'cert-presentation': 'presentation2.jpeg',
+            'cert-pyexpo': 'pyexpo2.jpeg'
+        };
+
+        certToggles.forEach((toggle) => {
+            const certId = toggle.dataset.target;
+            
+            toggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                const imageSrc = certificateImages[certId];
+                const altText = toggle.textContent.trim();
+                
+                certModalImage.src = imageSrc;
+                certModalImage.alt = altText;
+                certModal.style.display = 'flex';
+            });
+        });
+
+        // Close modal
+        certModalClose.addEventListener('click', () => {
+            certModal.style.display = 'none';
+        });
+
+        certModalOverlay.addEventListener('click', () => {
+            certModal.style.display = 'none';
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && certModal.style.display === 'flex') {
+                certModal.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 
 </html>
