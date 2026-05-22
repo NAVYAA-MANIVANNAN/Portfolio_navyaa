@@ -56,13 +56,13 @@ The website includes:
 1. Download or clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
+git clone https://github.com/NAVYAA-MANIVANNAN/NAVYAA-MANIVANNAN.git
 ```
 
 2. Open the project folder
 
 ```bash
-cd your-repository-name
+cd Portfolio_navyaa
 ```
 
 3. Run the website
@@ -92,9 +92,9 @@ This project can be deployed using:
 
 ## 👤 Author
 
-**Navyaaabi**
+**NAVYAA.M**
 
-GitHub: [https://github.com/your-username](https://github.com/your-username)
+GitHub: [https://github.com/NAVYAA-MANIVANNAN](https://github.com/NAVYAA-MANIVANNAN)
 
 ---
 
