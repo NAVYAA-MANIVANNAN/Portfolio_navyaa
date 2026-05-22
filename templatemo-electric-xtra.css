@@ -1475,10 +1475,31 @@ https://templatemo.com/tm-596-electric-xtra
     margin: auto;
     display: block;
     max-width: 90%;
-    max-height: 90%;
+    max-height: 60%;
     border-radius: 5px;
     box-shadow: 0 0 30px rgba(0, 178, 255, 0.4);
     animation: zoom 0.3s ease;
+}
+
+.cert-modal-text {
+    color: #ffffff;
+    max-width: 90%;
+    width: 100%;
+    margin: 20px auto 0;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.cert-modal-text h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #00B2FF;
+}
+
+.cert-modal-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.95;
 }
 
 @keyframes zoom {

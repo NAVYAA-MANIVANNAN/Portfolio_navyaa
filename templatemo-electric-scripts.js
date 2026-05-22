@@ -200,17 +200,99 @@ function toggleCert(headerElement) {
     }
 }
 
-function openCertModal(imageSrc) {
+const certificateData = {
+    'cisco-packet-tracer': {
+        title: 'Cisco Packet Tracer Certificate',
+        image: './cisco-packet-tracer.jpeg',
+        description: 'This certificate was awarded by Cisco Networking Academy for successfully completing the course “Getting Started with Cisco Packet Tracer.” The certification demonstrates foundational knowledge in network simulation, packet tracing, and basic networking concepts using Cisco tools. This achievement reflects practical understanding of networking environments and troubleshooting techniques. 🌐📡'
+    },
+    'advanced-diploma': {
+        title: 'Advanced Diploma in Computer Programming',
+        image: './presentation2.jpeg',
+        description: 'This certificate was awarded by Tamilnadu Rural Computer Education Enhancement Scheme (TRCES) for successfully completing the Advanced Diploma in Computer Programming course conducted at Cadd Cae Computers, Bodinayakkanur. The program covered programming fundamentals, software development concepts, database management, and practical computer applications. This certification represents dedication toward technical and professional skill development. 💻🎓'
+    },
+    'ibm-sql': {
+        title: 'IBM SQL Certificate',
+        image: './ibm-sql-querying-databases.jpeg',
+        description: 'This certificate was awarded by IBM through Coursera for successfully completing the course “SQL: A Practical Introduction for Querying Databases.” The course provided hands-on experience in database querying, SQL commands, data filtering, joins, and relational database concepts. This achievement highlights strong foundational knowledge in database management and data handling. 🗄️📊'
+    },
+    'oracle-java-foundations': {
+        title: 'Oracle Java Foundations Certificate',
+        image: './oracle-java-foundations.jpeg',
+        description: 'This certificate was awarded by Oracle through Coursera for successfully completing the course “Oracle Java Foundations.” The course focused on Java programming basics, object-oriented concepts, problem-solving techniques, and application development. This certification demonstrates a solid understanding of core Java programming principles. ☕💡'
+    },
+    'jdbc-introduction': {
+        title: 'JDBC Introduction Certificate',
+        image: './jdbc-introduction.jpeg',
+        description: 'This certificate was awarded by LearnQuest through Coursera for successfully completing the course “Java Database Connectivity (JDBC) Introduction.” The course covered Java database integration, JDBC architecture, SQL execution through Java, and database-driven application development. This achievement reflects practical skills in connecting applications with databases. 🔗🗃️'
+    },
+    'core-java-multithreading': {
+        title: 'Core Java Multithreading Certificate',
+        image: './core-java-multithreading-classes.jpeg',
+        description: 'This certificate was awarded by LearnKartS through Coursera for successfully completing the course “Core Java - Multithreading and Classes.” The course focused on Java multithreading concepts, class structures, synchronization, and concurrent programming techniques. This certification demonstrates advanced understanding of efficient Java application development. ⚙️☕'
+    },
+    'ibm-networking-storage': {
+        title: 'IBM Networking and Storage Certificate',
+        image: './ibm-networking-storage.jpeg',
+        description: 'This certificate was awarded by IBM through Coursera for successfully completing the course “Introduction to Networking and Storage.” The course introduced networking fundamentals, storage technologies, data communication concepts, and system infrastructure management. This achievement highlights foundational IT and networking knowledge. 🌐💾'
+    },
+    'kgisl-dbms-security': {
+        title: 'KGiSL DBMS and Security Certificate',
+        image: './kgisl-dbms-security.jpeg',
+        description: 'This certificate was awarded by KGiSL Educational Institutions through Coursera for successfully completing the course “Database Management Systems and Security.” The course covered database concepts, data security, access control, and secure information management practices. This certification demonstrates awareness of secure database administration and cybersecurity fundamentals. 🔒🗄️'
+    },
+    'meta-advanced-mysql': {
+        title: 'Meta Advanced MySQL Certificate',
+        image: './meta-advanced-mysql.jpeg',
+        description: 'This certificate was awarded by Meta through Coursera for successfully completing the course “Advanced MySQL Topics.” The course focused on advanced database operations, indexing, optimization, stored procedures, and efficient data management techniques using MySQL. This achievement reflects strong practical database management skills. 📊🐬'
+    },
+    'microsoft-operating-systems-security': {
+        title: 'Microsoft Operating Systems & Security Certificate',
+        image: './microsoft-operating-systems-security.jpeg',
+        description: 'This certificate was awarded by Microsoft through Coursera for successfully completing the course “Introduction to Computers and Operating Systems and Security.” The course introduced computer fundamentals, operating system concepts, system security, and safe computing practices. This certification represents foundational knowledge in computer systems and cybersecurity. 🖥️🔐'
+    }
+};
+
+function openCertModal(certId) {
+    const data = certificateData[certId];
+    if (!data) return;
+
     const modal = document.getElementById('certModal');
     const modalImg = document.getElementById('certImage');
+    const modalTitle = document.getElementById('certModalTitle');
+    const modalDesc = document.getElementById('certModalDescription');
+
+    modalTitle.textContent = data.title;
+    modalDesc.textContent = data.description;
+    modalImg.src = data.image;
+    modalImg.style.display = 'block';
+
+    modalImg.onerror = function () {
+        modalImg.style.display = 'none';
+        modalDesc.textContent = data.description + ' (Certificate image not found. Please add the matching image file to the portfolio folder.)';
+    };
+
+    modalImg.onload = function () {
+        modalImg.style.display = 'block';
+    };
+
     modal.style.display = 'flex';
-    modalImg.src = imageSrc;
 }
 
 function closeCertModal() {
     const modal = document.getElementById('certModal');
     modal.style.display = 'none';
 }
+
+// Open each certificate modal when its View Certificate button is clicked
+const certLinks = document.querySelectorAll('.view-cert-link');
+certLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const certId = this.dataset.certId;
+        openCertModal(certId);
+    });
+});
 
 // Close modal when clicking outside the image
 window.onclick = function(event) {
